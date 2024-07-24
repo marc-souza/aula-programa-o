@@ -10,10 +10,26 @@ let locLojas = ["av7", "gamboa","piedade" ]
 
 let bolsosF = ["bolso1", "bolso2"]
 let calça = {
-    "bolso1": [" celular "," carteira ", " chave1"],
-    "bolso2": [" chave2 ", " cVis ", " cad "],
-    "bolso3": [],
-    "bolso4": []
+     "bolso1": {
+     "contem":   [" celular "," carteira ", " chave1"],
+     "fundo": true
+    },
+         "bolso2": {
+            "contem": [" chave2 ", " cVis ", " cad"],
+            "fundo": true
+},
+     "bolso3": {
+        "contem":[],
+        "fundo": false
+    },
+     "bolso4": {
+        "contem": [],
+        "fundo": false
+    }
 } 
-console.log("Na minha calça tem 4 bolsos, no primeiro bolso contém:" + calça.bolso1, "no segundo bolso, contém:" + calça.bolso2 + "e os bolsos 3 e 4 estão vazios" , "e os bolsos fundos são " + bolsosF)
 
+
+console.log("Na minha calça tem" +  Object.keys(calça) + " no bolso 1, contém" + calça.bolso1.contem + "sobre")
+
+//("Na minha calça tem 4 bolsos, no primeiro bolso contém:" + calça.bolso1, "no segundo bolso, contém:" + calça.bolso2 + "e os bolsos 3 e 4 estão vazios" , "e os bolsos fundos são " + bolsosF)
+//console.log(Object.values(calça.bolso1))
