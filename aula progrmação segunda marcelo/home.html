@@ -5,17 +5,22 @@
             background-color: rgb(197, 211, 138);
             width: 100%;
             height: 60px;
+            position: sticky;
         }
         .logo {
             background-color: black;
-            color: white
+            color: white;
+            top:0px;
+            left: 0px
         }
         .logo2 {
             background-color: white;
             color: black;
+            top: 0px;
+            left: 0px;
         }
         body {
-            background-color: rgb(91, 92, 82);
+            background-color: rgb(226, 231, 174);
         }
         footer {
             background-color: rgb(148, 146, 143);
@@ -29,14 +34,27 @@
             width: 500px;
             height: 500px;
             position: static;
+            background-color: aqua;
         }        
+        .center {   
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: rgb(70, 59, 70);
+        }
+        .centerHeader {
+            background-color: rgb(255, 255, 255);
+        }
+        .filmes {
+            background-color: rgb(126, 117, 134);
+        }
     </style>
 
     <script></script>       
 
         <header>
             <div class="logo"> 
-                <strong>Diretores de cinema e seus maiores filmes</strong>
+                <strong>Ig: @marc.souzzza</strong>
             </div>
             <div class="logo2">
                 <strong> Século XX</strong>
@@ -44,19 +62,40 @@
         </header>
 
         <body>
-            <div>
-                vivre sa vie
+            <div class="center">
+                <div class="centerHeader">
+                    Cineastas que você precisa conhecer
+                </div>
+                <div class="filmesList">
+                    <div class="filmes">
+                        <h1>
+                            Ingmar Bergman
+                        </h1>
+                        <h2>
+                            Diretor de Persona, Summer With Monika
+                        </h2>
+                        <p>
+                            Nasceu na suécia
+                        </p>
+                        <img src="https://www.escoladarcyribeiro.org.br/wp-content/uploads/2018/07/BERGMAN.png"/>
+                    </div> 
+                    <div class="filmes">
+                        <h1>
+                            Ingmar Bergman
+                        </h1>
+                        <h2>
+                           Diretor de Persona, Summer With Monika
+                        </h2>
+                        <p>
+                           Nasceu na suécia
+                        </p>
+                        <img src="https://www.escoladarcyribeiro.org.br/wp-content/uploads/2018/07/BERGMAN.png"/>
+                    </div> 
             </div>
-            <h1>
-                1 - Ingmar Bergman
-            </h1>
-            <img class="iB" src="data:image/jpeg;base64,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"/>
-            <h1>
-            2 - Jean Luc-Godard
-           </h1> 
-            <img class="iG" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fistoe.com.br%2Fo-decidido-adeus-de-jean-luc-godard%2F&psig=AOvVaw2LCxLMC7hCNRlzgwaO_F9o&ust=1725377362151000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCqkdrJpIgDFQAAAAAdAAAAABAY"/>
-            
-    </body>
+                Fim do center
+            </div>
+           
+        </body>
 
     <footer>
         <div>
