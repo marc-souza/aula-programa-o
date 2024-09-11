@@ -2,10 +2,12 @@
 
     <style>
         header {
-            background-color: rgb(197, 211, 138);
+            background-color: rgb(23, 26, 15);
             width: 100%;
             height: 60px;
-            position: sticky;
+            position: fixed;
+            left: 0px;
+            top: 0px;
         }
         .logo {
             background-color: black;
@@ -19,16 +21,11 @@
             top: 0px;
             left: 0px;
         }
-        body {
-            background-color: rgb(226, 231, 174);
-        }
         footer {
-            background-color: rgb(148, 146, 143);
+            background-color: rgb(0, 0, 0);
             width: 100%;
             height: 70px;
-            bottom: 0px;
-            left: 0px;
-            position: fixed;
+            position: static;
         }
         .iB {
             width: 500px;
@@ -37,16 +34,16 @@
             background-color: aqua;
         }        
         .center {   
-            position: relative;
-            top: 0px;
-            left: 0px;
-            background-color: rgb(70, 59, 70);
+            background-color: rgb(121, 111, 121);
+            padding-top: 60px;
         }
         .centerHeader {
             background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 70px;
         }
         .filmes {
-            background-color: rgb(126, 117, 134);
+            background-color: rgb(121, 111, 121);
         }
     </style>
 
@@ -61,7 +58,6 @@
             </div>
         </header>
 
-        <body>
             <div class="center">
                 <div class="centerHeader">
                     Cineastas que você precisa conhecer
@@ -81,24 +77,34 @@
                     </div> 
                     <div class="filmes">
                         <h1>
-                            Ingmar Bergman
+                            Jean Luc-Godard
                         </h1>
                         <h2>
-                           Diretor de Persona, Summer With Monika
+                           Diretor de Dêmonio das onze horas, Vivre sa Vie
                         </h2>
                         <p>
-                           Nasceu na suécia
+                           Nasceu na França
                         </p>
-                        <img src="https://www.escoladarcyribeiro.org.br/wp-content/uploads/2018/07/BERGMAN.png"/>
+                        <img src="https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/2023/11/29113832/godard_binary_302666.jpg"/>
+                    </div> 
+                    <div class="filmes">
+                        <h1>
+                            Chantal Akerman
+                        </h1>
+                        <h2>
+                           Diretora de Jeanne Dielman, "Eu, Tu, Ele, Ela"
+                        </h2>
+                        <p>
+                           Nasceu na Bélgica
+                        </p>
+                        <img src="https://uploads.metroimg.com/wp-content/uploads/2015/10/06135151/chantal.jpg"/>
                     </div> 
             </div>
                 Fim do center
             </div>
-           
-        </body>
 
     <footer>
-        <div>
+        <div class="logo">
             CInemaTEca
         </div>
 
